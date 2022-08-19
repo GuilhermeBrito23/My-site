@@ -13,12 +13,12 @@ def pokedex():
             data = json.loads(response.text)
 
             for item in data['types']:
-        # Se o pokemon tiver mais de um tipo é adicionado na lista
+                # Se o pokemon tiver mais de um tipo é adicionado na lista
                 poke_types.append(item['type']['name'])
 
             poke_name = data['name']
             poke_number = data['id']
-            poke_img = 'src='+ data['sprites']['other']['official-artwork']['front_default']
+            poke_img = 'src=' + data['sprites']['other']['official-artwork']['front_default']
         except:
             poke_types.append('nenhum')
             poke_name = 'não encontrado'

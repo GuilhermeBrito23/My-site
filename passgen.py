@@ -23,4 +23,4 @@ def GeraSenha():
 
         return render_template('passgen.html', pwd=pwd)
     else:
-        return render_template('passgen.html', pwd=None )
+        return render_template('passgen.html', pwd=None)
