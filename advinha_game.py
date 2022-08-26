@@ -34,7 +34,7 @@ def adivinha_game_func():
                 count += 1
 
             if '_' not in guess_word:
-                 win='ACERTOOU!!'
+                 win= True
             return render_template('advinha-game.html', word=guess_word,win=win)
     except:
         return render_template('advinha-game.html', word="Aconteceu algum erro :(")

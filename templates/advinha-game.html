@@ -17,8 +17,12 @@
             <button class="btn btn-info btn-sm" type="submit"> Pesquisar</button>
         </p>
     </form>
-    {{win}}
+    <form method="GET" action="/guess-game">
+        <button class="btn btn-info btn-sm" type="submit">Jogar novamente</button>
+    </form>
 </section>
-
+    {% if win == True %}
+    <script>alert('Acertou!!');</script>
+    {% endif %}
 </body>
 </html>
